@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>任务一&九宫格</title>
+    <style>
+        *{margin:0;padding: 0;list-style:none;}
+        .wrapper{
+            position: relative;
+            width:170px;
+            height:240px;
+            margin:100px auto 0px;
+            background-color: rgb(240, 229, 229);
+           
+        }
+        ul{
+            overflow: hidden;
+            margin-left:5px;
+        }
+        li{
+            width:50px;
+            height:50px;
+            background-color:rgb(255, 187, 0);
+            margin:5px 5px 0 0;
+            border-radius:5px;
+            display:inline-block;
+            float:left;
+        }
+
+        .btn{
+            width: 160px;
+            height:30px;
+            border:1px solid coral;
+            color:coral ;
+            display:block;
+            border-radius:3px;
+            margin:5px auto;
+            cursor: pointer;
+            outline: none;
+        }
+        .btn:hover{
+            background-color:coral;
+            color: white;
+        }
+
+
+    </style>
+</head>
+<body>
+<!-- 2021年4月14日 -->
+<!-- 项目分析：
+    1.创建九宫格图形(用ul+li或table布局)；
+    2.创建启停按钮button，启动start和停止stop；
+    3.设置0~8三组随机数Math.random();利用if判断语句排除同组相同随机数；
+    4.设置背景色数组库，长度匹配随机数范围；
+    5.添加定时器setInterval()，每秒随机在3个方格添加随机背景色；
+    6.将上述代码片段封装；
+    7.绑定点击事件，在事件内调用封装函数，启动开始闪烁，结束停止闪烁复原。
+-->
+
+<div class="wrapper">
+    <ul>  
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <button class="start btn">start</button>
+    <button class="stop btn">stop</button>   
+</div>
+
+<script src="First_.js"></script>
+</body>
+</html>
